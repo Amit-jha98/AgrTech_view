@@ -5,3 +5,13 @@ out
 .cache
 .DS_Store
 Thumbs.db
+
+# Firebase
+**/firebaseServiceAccount.json
+**/firebase-adminsdk*.json
+**/firebase-service-account*.json
+
+# Other secrets
+**/*.pem
+**/*.key
+**/credentials.json
