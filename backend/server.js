@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // Routes
-app.use('/api/weather', require('./routes/weather'));
+app.use('/api', require('./routes/weather'));
 
 // Error handling
 app.use((err, req, res, next) => {

@@ -1,7 +1,9 @@
 const express = require("express");
-const router = express.Router();
-const weatherController = require("../controllers/weather"); // ✅ Fix import path
+const weatherController = require("../controllers/weatherController");
 
-router.get("/", weatherController.getWeather);
+const router = express.Router();
+
+router.get("/weather", weatherController.getWeather);
+router.get("/past-weather", weatherController.getPastWeather);
 
 module.exports = router;
