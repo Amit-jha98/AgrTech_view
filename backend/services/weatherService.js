@@ -1,6 +1,6 @@
 const axios = require("axios");
 const admin = require("firebase-admin");
-const { db } = require("D:\\hackathon\\agritech-a01f5-firebase-adminsdk-fbsvc-0a591af4f0.json");
+const { db } = require("../config/firebaseConfig"); // ✅ Correct import
 require("dotenv").config();
 
 const API_KEY = process.env.WEATHER_API_KEY;

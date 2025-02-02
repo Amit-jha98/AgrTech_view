@@ -3,7 +3,7 @@ const path = require("path");
 
 let serviceAccount;
 try {
-  serviceAccount = require(path.join(__dirname, "..", "firebaseServiceAccount.json"));
+  serviceAccount = require("D:\\hackathon\\agritech-a01f5-firebase-adminsdk-fbsvc-0a591af4f0.json");
   
   // Validate required fields
   if (!serviceAccount.private_key || !serviceAccount.client_email || !serviceAccount.project_id) {
