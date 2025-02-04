@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import React from 'react';
+=======
 
+>>>>>>> code_daan
 import { Routes, Route } from 'react-router-dom';
 import { Box, Container } from '@mui/material';
 import Navbar from './components/Navbar';
@@ -8,6 +12,10 @@ import Weather from './pages/Weather';
 import SoilHealth from './pages/SoilHealth';
 import CropAdvisory from './pages/CropAdvisory';
 import "bootstrap/dist/css/bootstrap.min.css";
+<<<<<<< HEAD
+
+const App = () => {
+=======
 import { logVisit } from './services/visitorService';
 import React, { useEffect } from 'react'; 
 
@@ -23,6 +31,7 @@ const App = () => {
     }
   }, []);
 
+>>>>>>> code_daan
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
