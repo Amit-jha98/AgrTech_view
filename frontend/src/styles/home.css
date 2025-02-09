@@ -1,0 +1,98 @@
+/* General Styles */
+.home-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #4caf50;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Features Section Styles */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4caf50;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Call to Action Section Styles */
+  .cta {
+    margin: 40px 0;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }

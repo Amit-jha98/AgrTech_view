@@ -1,0 +1,11 @@
+.modern-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modern-table th,
+  .modern-table td {
+    text-align: center;
+  }
+  
