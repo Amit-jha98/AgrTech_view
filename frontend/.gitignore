@@ -14,4 +14,14 @@ Thumbs.db
 # Other secrets
 **/*.pem
 **/*.key
+<<<<<<< HEAD
 **/credentials.json
+=======
+<<<<<<< HEAD
+**/credentials.json
+=======
+**/credentials.json
+**/package-lock.json
+**/backend/package-lock.json
+>>>>>>> code_daan
+>>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758

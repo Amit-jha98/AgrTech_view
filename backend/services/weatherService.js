@@ -15,7 +15,11 @@ exports.fetchWeatherData = async (location) => {
         params: { key: API_KEY, q: location, aqi: "yes" }
       }),
       axios.get(`${BASE_URL}/forecast.json`, {
+<<<<<<< HEAD
         params: { key: API_KEY, q: location, days: 5, aqi: "yes" }
+=======
+        params: { key: API_KEY, q: location, days: 3, aqi: "yes" }
+>>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
       })
     ]);
 

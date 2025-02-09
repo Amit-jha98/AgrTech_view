@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
 import csv
 import random
 
@@ -145,6 +148,7 @@ def generate_dataset(base_rows, total_rows, output_file):
     print(f"Dataset saved as {output_file}")
 
 generate_dataset(base_rows, total_rows, output_file)
+<<<<<<< HEAD
 =======
 import pandas as pd
 import re
@@ -239,3 +243,5 @@ input_csv = "D:/hackathon/agriculture-platform/ai-ml/data/questionsv4.csv"  # En
 output_csv = "D:/hackathon/agriculture-platform/ai-ml/data/cleaned_dataset.csv"
 clean_dataset(input_csv, output_csv, chunksize=10000)
 >>>>>>> 518e557 (Initial commit)
+=======
+>>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
