@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-node_modules
-.env
-.next
-out
-.cache
-.DS_Store
-Thumbs.db
-
-# Firebase
-**/firebaseServiceAccount.json
-**/firebase-adminsdk*.json
-**/firebaseServiceAccount.json
-
-# Other secrets
-**/*.pem
-**/*.key
-**/credentials.json
-=======
 # ============================================
 # Project-Specific Exclusions
 # ============================================
@@ -183,4 +164,3 @@ jspm_packages/
 
 # Output of 'npm pack'
 *.tgz
->>>>>>> code_daan
