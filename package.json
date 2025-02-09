@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd backend && node server.js",
-    "client": "cd frontend && set BROWSER=none && set PORT=3001 && npm start",
-    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "build": "cd frontend && npm run build",
-    "dev": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm start\""
+    "start": "npm run build && cd backend && node server.js",
+    "server": "node backend/server.js",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "build": "cd frontend && npm install && npm run build",
+    "lint": "eslint .",
+    "test": "cd frontend && npm test"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -38,7 +40,8 @@
     "recharts": "^2.15.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.2"
   },
   "eslintConfig": {
     "extends": [
