@@ -13,12 +13,8 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // Routes
-<<<<<<< HEAD
 app.use('/api/weather', require('./routes/weather'));
 app.use("/api/submitProduct", require("./routes/submit-product"));
-=======
-app.use('/api', require('./routes/weather'));
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
 
 // Error handling
 app.use((err, req, res, next) => {

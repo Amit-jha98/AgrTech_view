@@ -13,11 +13,7 @@
         "bcryptjs": "^2.4.3",
         "cors": "^2.8.5",
         "dotenv": "^16.4.7",
-<<<<<<< HEAD
         "express": "^4.21.2",
-=======
-        "express": "^4.18.2",
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
         "firebase": "^11.2.0",
         "firebase-admin": "^13.0.2",
         "helmet": "^7.0.0",

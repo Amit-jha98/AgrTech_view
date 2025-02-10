@@ -1,5 +1,4 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
-<<<<<<< HEAD
 import torch
 import re
 from typing import List, Dict
@@ -108,9 +107,9 @@ class MultiModelChatbot:
 
 model_paths = [
     # "D:/hackathon/AgrTech_view/ai-ml/trained_model",
-    # "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
     # "D:/hackathon/agriculture-platform/ai-ml/trained_model",
-    "D:/hackathon/trained_model"  # Example of adding a different model
+    # "D:/hackathon/trained_model"  # Example of adding a different model
 ]
 
 chatbot = MultiModelChatbot(model_paths)
@@ -128,20 +127,3 @@ if __name__ == "__main__":
         print(f"Best Response: {chatbot.get_response(query)}")
         print("-" * 80)
 
-=======
-
-# Specify the path to your trained model (the folder where you saved it)
-local_model_path = "D:/hackathon/agriculture-platform/ai-ml/trained_model"
-
-# Load the tokenizer and model from the GPT-2 checkpoint
-tokenizer = AutoTokenizer.from_pretrained(local_model_path)
-model = AutoModelForCausalLM.from_pretrained(local_model_path)
-
-def get_chatbot_response(query):
-    inputs = tokenizer(query, return_tensors="pt")
-    outputs = model(**inputs)
-    # For a causal LM, you might need a custom decoding strategy.
-    # Here we simply return the generated token(s) as text.
-    generated_ids = model.generate(**inputs, max_length=100)
-    return tokenizer.decode(generated_ids[0], skip_special_tokens=True)
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758

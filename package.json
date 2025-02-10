@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
     "start": "npm run build && cd backend && node server.js",
     "server": "node backend/server.js",
     "client": "cd frontend && npm start",
@@ -12,14 +11,6 @@
     "build": "cd frontend && npm install && npm run build",
     "lint": "eslint .",
     "test": "cd frontend && npm test"
-=======
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd backend && node server.js",
-    "client": "cd frontend && set BROWSER=none && set PORT=3001 && npm start",
-    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "build": "cd frontend && npm run build",
-    "dev": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm start\""
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -45,19 +36,12 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
     "react-speech-recognition": "^3.10.0",
     "recharts": "^2.15.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
     "concurrently": "^8.2.2"
-=======
-    "react-speech-recognition": "^3.10.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
   },
   "eslintConfig": {
     "extends": [

@@ -32,7 +32,6 @@ const GradientBox = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   position: 'fixed',
-<<<<<<< HEAD
   bottom: '120px', // Higher position on desktop
   right: '20px',
   zIndex: 1000,
@@ -44,11 +43,6 @@ const GradientBox = styled(Box)(({ theme }) => ({
     maxWidth: 'calc(100% - 20px)',
     height: '60vh',
   },
-=======
-  bottom: '20px',
-  right: '20px',
-  zIndex: 1000,
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
 }));
 
 const ChatbotComponent = () => {
@@ -67,13 +61,7 @@ const ChatbotComponent = () => {
   // Function to speak text using a female voice if available
   const speak = (text) => {
     const utterance = new SpeechSynthesisUtterance(text);
-<<<<<<< HEAD
     const voices = window.speechSynthesis.getVoices();
-=======
-    // Get available voices
-    const voices = window.speechSynthesis.getVoices();
-    // Attempt to select a female voice
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
     const femaleVoice = voices.find(voice => voice.name.toLowerCase().includes("female")) ||
                         voices.find(voice => voice.lang === "en-US") || voices[0];
     utterance.voice = femaleVoice;
@@ -113,13 +101,8 @@ const ChatbotComponent = () => {
         onClick={() => setShowChat(!showChat)}
         sx={{
           position: 'fixed',
-<<<<<<< HEAD
           bottom: { xs: '20px', sm: '80px' }, // adjust for mobile
           right: { xs: '20px', sm: '20px' },
-=======
-          bottom: '80px',
-          right: '20px',
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
           zIndex: 1100,
           borderRadius: '50%',
           width: '60px',

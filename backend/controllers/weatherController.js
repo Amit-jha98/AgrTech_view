@@ -1,10 +1,4 @@
 const weatherService = require("../services/weatherService");
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
 const decryptData = (encryptedData, ivHex) => {
   const iv = Buffer.from(ivHex, 'hex');
   const decipher = crypto.createDecipheriv('aes-256-cbc', ENCRYPTION_KEY, iv);
@@ -15,10 +9,7 @@ const decryptData = (encryptedData, ivHex) => {
   return JSON.parse(decrypted.toString());
 };
 
-<<<<<<< HEAD
-=======
->>>>>>> code_daan
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
+
 exports.getWeather = async (req, res) => {
   const { location } = req.query;
 

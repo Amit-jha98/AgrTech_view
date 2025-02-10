@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-import React from 'react';
-import { Box, Grid, Paper, Typography } from '@mui/material';
-
-const Dashboard = () => {
-  return (
-    <Box sx={{ flexGrow: 1, p: 3 }}>
-      <Typography variant="h4" gutterBottom>
-        Farmer's Dashboard
-      </Typography>
-      
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={4}>
-          <Paper sx={{ p: 2, textAlign: 'center' }}>
-            <Typography variant="h6">Weather Forecast</Typography>
-            <Typography>Sunny, 25°C</Typography>
-=======
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
 import React, { useState, useEffect } from 'react';
 import { Box, Grid, Paper, Typography, CircularProgress, Alert, IconButton } from '@mui/material';
 import { WbSunny, Opacity, Air, Refresh, LocalFlorist, Assignment } from '@mui/icons-material';
@@ -95,20 +75,20 @@ const Dashboard = () => {
             ) : weatherData?.current ? (
               <Box sx={{ mt: 2 }}>
                 <Typography variant="h3" sx={{ color: '#33691e', mb: 1 }}>
-                  {weatherData.current.current.temp_c}°C
+                  {weatherData.current.temp_c}°C
                 </Typography>
                 <Typography variant="h6" sx={{ color: '#558b2f', mb: 2 }}>
-                  {weatherData.current.current.condition.text}
+                  {weatherData.current.condition.text}
                 </Typography>
                 <Grid container spacing={2} justifyContent="center">
                   <Grid item>
                     <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                      <Opacity fontSize="small" /> {weatherData.current.current.humidity}%
+                      <Opacity fontSize="small" /> {weatherData.current.humidity}%
                     </Typography>
                   </Grid>
                   <Grid item>
                     <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                      <Air fontSize="small" /> {weatherData.current.current.wind_kph} km/h
+                      <Air fontSize="small" /> {weatherData.current.wind_kph} km/h
                     </Typography>
                   </Grid>
                 </Grid>
@@ -116,22 +96,10 @@ const Dashboard = () => {
             ) : (
               <Typography>No weather data available</Typography>
             )}
-<<<<<<< HEAD
-=======
->>>>>>> code_daan
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
           </Paper>
         </Grid>
         
         <Grid item xs={12} md={4}>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <Paper sx={{ p: 2, textAlign: 'center' }}>
-            <Typography variant="h6">Soil Health</Typography>
-            <Typography>Good Condition</Typography>
-=======
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
           <Paper sx={{ 
             p: 3, 
             textAlign: 'center',
@@ -147,22 +115,10 @@ const Dashboard = () => {
               <LocalFlorist /> Soil Health
             </Typography>
             <Typography variant="h5" sx={{ color: '#33691e', mt: 4 }}>Good Condition</Typography>
-<<<<<<< HEAD
-=======
->>>>>>> code_daan
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
           </Paper>
         </Grid>
         
         <Grid item xs={12} md={4}>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <Paper sx={{ p: 2, textAlign: 'center' }}>
-            <Typography variant="h6">Next Steps</Typography>
-            <Typography>Time to fertilize</Typography>
-=======
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
           <Paper sx={{ 
             p: 3, 
             textAlign: 'center',
@@ -178,10 +134,6 @@ const Dashboard = () => {
               <Assignment /> Next Steps
             </Typography>
             <Typography variant="h5" sx={{ color: '#33691e', mt: 4 }}>Time to fertilize</Typography>
-<<<<<<< HEAD
-=======
->>>>>>> code_daan
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
           </Paper>
         </Grid>
       </Grid>
@@ -189,12 +141,4 @@ const Dashboard = () => {
   );
 };
 
-<<<<<<< HEAD
 export default Dashboard;
-=======
-<<<<<<< HEAD
-export default Dashboard;
-=======
-export default Dashboard;
->>>>>>> code_daan
->>>>>>> f811cefb62554fcbfa4a6eb9b94da4ae1054e758
