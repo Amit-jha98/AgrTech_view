@@ -107,9 +107,9 @@ class MultiModelChatbot:
 
 model_paths = [
     # "D:/hackathon/AgrTech_view/ai-ml/trained_model",
-    "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    # "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
     # "D:/hackathon/agriculture-platform/ai-ml/trained_model",
-    # "D:/hackathon/trained_model"  # Example of adding a different model
+    "D:/hackathon/trained_model"  # Example of adding a different model
 ]
 
 chatbot = MultiModelChatbot(model_paths)
