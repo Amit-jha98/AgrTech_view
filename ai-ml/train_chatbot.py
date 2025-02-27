@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from multiprocessing import freeze_support
 
 # Add Hugging Face token (Replace "your_huggingface_token" with your actual token)
-HF_TOKEN = "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"
+HF_TOKEN = ""
 os.environ["HF_TOKEN"] = HF_TOKEN  # Set token as an environment variable
 
 def main():
