@@ -11,7 +11,7 @@ const NavigationBar = () => {
           onClick={() => navigate('/')} 
           style={{ cursor: 'pointer' }}
         >
-          Agriculture Platform
+          KrishiSetu
         </Navbar.Brand>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
