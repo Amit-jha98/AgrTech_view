@@ -55,7 +55,7 @@ const Home = () => {
         textAlign: 'center',
       }}>
         <Typography variant="h2" sx={{ fontWeight: 700, mb: 2 }}>
-          AgriTech Pro
+          KrishiSetu
         </Typography>
         <Typography variant="h5" sx={{ opacity: 0.9 }}>
           Smart Farming Solutions for the Digital Age
